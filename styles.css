@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   /* font-family: "Montserrat", sans-serif; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
-/* BODY */
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .genLayout {
@@ -23,10 +23,15 @@ body {
 
 .cafeuNav {
   display: flex;
-  gap: 10px;
   padding-block: 1rem;
   color: #fff;
-  justify-content: end;
+  justify-content: space-between;
+}
+
+.vas{
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
 }
 
 .hamburger {
@@ -43,7 +48,6 @@ body {
 
 .lobster {
   display: flex;
-  padding-right: 200px;
   text-transform: capitalize;
   gap: 10px;
   align-items: end;
@@ -56,7 +60,6 @@ body {
   align-items: center;
   text-align: end;
   text-decoration: none;
-  /* width: 1500px; */
 }
 
 .firstNav a {
@@ -69,13 +72,11 @@ body {
 
 .firstNav > h5 > span {
   font-size: 15px;
-  padding-left: 5px;
   color: #fff;
   text-align: center;
 }
 
 .navIcon {
-  align-items: start;
   background-color: transparent;
 }
 
@@ -103,8 +104,6 @@ body {
 
 .cafeuWriting {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
 }
 
 .cafeuContent {
@@ -129,9 +128,9 @@ body {
 }
 
 .bbq {
-  width: 79%;
-  font-weight: 700;
-  font-size: 6vh;
+  width: 100%;
+  font-weight: 100;
+  font-size: 5.8vh;
   text-transform: capitalize;
   color: #fff;
   margin-block: 20px;
@@ -146,7 +145,8 @@ body {
 .cafeuWord {
   color: #5e647a;
   font-weight: 300;
-  width: 73%;
+  width: 100%;
+  max-width: 500px;
   font-size: 20px;
   font-family: sans-serif;
 }
@@ -160,7 +160,7 @@ body {
   padding: 10px;
   background-color: transparent;
   border: 1px solid black;
-  width: 17%;
+  width: 15%;
   color: #fff;
 }
 
@@ -168,10 +168,11 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 15px;
+  /* width: 45%; */
 }
 
 .cafeuBtn > .triangle {
-  width: 80px; /* overall container width */
+  width: 60px; /* overall container width */
   height: 40px; /* overall container height */
   background: #b42322;
   clip-path: polygon(
@@ -191,7 +192,7 @@ body {
 
 .triangle > span {
   background-color: white;
-  padding: 8px;
+  padding: 5px;
   border-radius: 60%;
 }
 
@@ -253,13 +254,14 @@ body {
 }
 
 .cafeImage > img {
-  width: 530px;
+  width: 100%;
+  /* object-fit: cover; */
+  max-width: 530px;
   height: 530px;
   background-color: transparent;
   border-radius: 100%;
   border: 2px dashed #fff;
   justify-content: end;
-  object-fit: cover;
 }
 
 .cafeSmall {
@@ -270,48 +272,47 @@ body {
 }
 
 .cafeSmall > img:nth-of-type(1) {
-  position: relative;
+  position: absolute;
   top: -30rem;
-  left: 26.5rem;
+  right: -28rem;
   width: 80px;
   height: 80px;
 }
 
 .cafeSmall > img:nth-of-type(2) {
-  position: relative;
+  position: absolute;
   width: 80px;
   height: 80px;
   top: -30rem;
-  left: -4rem;
+  left: -rem;
 }
 
 .cafeSmall > img:nth-of-type(3) {
-  position: relative;
+  position: absolute;
   width: 60px;
   height: 60px;
-  left: 16rem;
+  left: 24.5rem;
   top: -8rem;
 }
 
 .cafeSmall > img:nth-of-type(4) {
-  position: relative;
+  position: absolute;
   width: 150px;
   height: 90px;
   top: -7rem;
-  left: -13rem;
+  /* left: -13rem; */
 }
 
 .cafeSmall > img:nth-of-type(5) {
-  position: relative;
+  position: absolute;
   width: 150px;
   height: 90px;
   top: -7rem;
-  left: -21rem;
+  /* left: -21rem; */
 }
 
 /* section2 */
 .stayWrapper {
-  /* height: 60vh; */
   background-color: #f5f5f5;
 }
 
@@ -323,14 +324,7 @@ body {
 }
 
 .stayI {
-  /* position: absolute; */
-  justify-content: center;
-
   text-align: center;
-  /* left: 15rem; */
-  /* top: 125vh; */
-  width: 100%;
-  max-width: 50rem;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0.3rem 0.3rem 0.3rem 0.8rem grey;
@@ -347,18 +341,16 @@ body {
 
 .stayInfo > p {
   font-size: 14px;
-  /* text-align: center; */
   justify-self: center;
-  /* justify-content: center; */
   line-height: 1.5;
   font-family: sans-serif;
   width: 60%;
-  /* padding-left: 20%; */
 }
 
 .stayBtn {
   margin-top: 20px;
   padding-left: 0px;
+  /* display: flex; */
 }
 
 .stayBtn > input {
@@ -372,31 +364,25 @@ body {
   border-radius: 5px;
   background-color: #c23231;
   border: none;
+  /* color: #0d0d0d; */
+  justify-self: end;
 }
 
 .stayImage {
   display: flex;
-  /* position: relative; */
-  /* padding: 0; */
   color: green;
   justify-content: space-between;
 }
-/* 
-.stayPic > img {
-  width: 80px;
-  opacity: 0.2;
-} */
 
 .stayPhoto > img {
   width: 80px;
-  /* position: absolute; */
   opacity: 0.2;
-  /* right: 0.1rem; */
 }
 
 .staySmallImage {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .staySmallImage > .imgI {
@@ -406,18 +392,14 @@ body {
 
 .staySmallImage > .imgIi {
   background-color: transparent;
-  position: relative;
-  right: -75vh;
+  position: absolute;
+  left: 175vh;
   top: -50vh;
 }
 
 .staySmallImage > .imgIii {
   height: 30%;
-  /* top: 160vh; */
-  /* bottom: -87vh; */
   position: relative;
-  /* display: flex; */
-  /* justify-self: end; */
 }
 
 /* section3 */
@@ -434,51 +416,64 @@ body {
 .chefImage {
   margin-block: 30px;
   width: 50%;
-  display: grid;
   object-fit: cover;
-  grid-template-columns: repeat(2, 15rem);
+}
+
+.chefImage1  {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(2, auto);
 }
 
 .chefImage1 > img {
-  width: 93%;
+  width: 100%;
   height: 40vh;
-  object-fit: cover;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  background-color: #f8f4ee;
-}
-
-.chefImage2 > img {
-  width: 93%;
-  height: 40vh;
+  background-color: #178255;
   object-fit: cover;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.chefImage1 img:nth-of-type(1)  {
+  border-bottom-right-radius: 0px;
+}
+
+.chefImage1 img:nth-of-type(2)  {
+  border-bottom-left-radius: 0px;
+}
+
+.chefImage1 img:nth-of-type(3)  {
+  border-top-right-radius: 0px;
+}
+
+.chefImage1 img:nth-of-type(4)  {
+  border-top-left-radius: 0px;
 }
 
 .chefImage3 > img {
-  width: 93%;
-  height: 40vh;
-  object-fit: cover;
-  border-bottom-right-radius: 50px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  /* width: 93%; */
+  /* height: 40vh; */
+  /* object-fit: cover; */
+  /* border-bottom-right-radius: 50px; */
+  /* border-top-left-radius: 50px; */
+  /* border-top-right-radius: 50px; */
 }
 
 .chefImage4 > img {
-  width: 93%;
-  height: 40vh;
-  object-fit: cover;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-top-right-radius: 50px;
+  /* width: 93%; */
+  /* height: 40vh; */
+  /* object-fit: cover; */
+  /* border-bottom-right-radius: 50px; */
+  /* border-bottom-left-radius: 50px; */
+  /* border-top-right-radius: 50px; */
 }
 
 .aboutWrapper {
   margin-block: 20px;
   padding-top: 60px;
+  width: 50%;
 }
 
 .about {
@@ -629,26 +624,28 @@ body {
 }
 
 .specially {
-  /* height: 13vh; */
   height: auto;
   border-radius: 10px;
   width: 40%;
   background-color: #c23231;
   padding: 30px;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .specially > img {
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  margin-left: 13px;
+  /* margin-left: 13px; */
   background-color: #fff;
   object-fit: cover;
+  display: flex;
+  justify-self: center;
 }
 
 .specially > p {
   text-align: center;
+  /* justify-items: center; */
   font-size: 20px;
   text-transform: capitalize;
 }
@@ -664,10 +661,10 @@ body {
 }
 
 .special > img {
-  /* height: 50px; */
   width: 50px;
   border-radius: 100%;
-  margin-left: 13px;
+  justify-self: center;
+  display: flex;
   object-fit: cover;
 }
 
@@ -678,32 +675,34 @@ body {
 }
 
 .specially > img {
-  /* width: 60px; */
-  /* height: 30px; */
+
 }
 
 .foodLayout {
   display: grid;
   gap: 15px;
-  width: 100%;
   grid-template-columns: repeat(3, auto);
 }
 
+.i{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+}
 .coleslaw {
   padding: 20px;
   background-color: #f2f2f4;
   border-radius: 10px;
-  width: 100%;
-  /* display: none; */
 }
 
 .coleslawLogo1 {
   display: flex;
-  /* justify-content: space-around; */
-  gap: 201px;
-  height: 30px;
-  padding-top: 12px;
-  position: absolute;
+  justify-content: space-between;
+  /* height: 30px; */
+  /* padding-top: 12px; */
+  position: relative;
+  bottom: -3.5rem;
   background-color: transparent;
 }
 
@@ -712,9 +711,11 @@ body {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 65px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-between;
 }
 
 .baskLogo {
@@ -722,17 +723,19 @@ body {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   width: 50px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-left: 12.6rem; */
 }
 
 .coleslaw > img {
-  height: 40vh;
-  /* height: auto; */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+  height: 40vh;
+  object-fit: cover ;
 }
 
 .coleslaw1 {
@@ -749,9 +752,6 @@ body {
 
 .coleslaw3 {
   display: flex;
-  /* gap: 40px; */
-
-  /* padding-block: 80px; */
   justify-content: space-between;
   bottom: -1rem;
   position: relative;
@@ -760,24 +760,19 @@ body {
 
 .delivery {
   display: flex;
-  gap: 20px;
+  gap: 8px;
 }
 
 .delivery > p {
   color: black;
   font-weight: 600;
-  /* padding-top: 30px; */
 }
 
 .coleslaw3 > span {
-  /* padding-top: 30px; */
-  /* width: 100%; */
-  /* max-width: 900px; */
+  
 }
 
 .coleslawLogo {
-  /* padding-left: 100px; */
-  /* padding-top: 25px; */
   display: flex;
   gap: 10px;
   align-items: start;
@@ -808,8 +803,6 @@ body {
 }
 
 .pizzaPic {
-  /* padding-top: 30px; */
-  /* position: relative; */
   object-fit: cover;
 }
 
@@ -820,25 +813,29 @@ body {
 
 .coming {
   padding: 20px;
+  display: grid;
+  align-content: center;
+  width: 35%;
+}
+
+.just{
+
+}
+
+.big{
+ 
 }
 
 .comingSoon {
   color: #fff;
-  position: relative;
-  bottom: -7.5rem;
-  /* padding-top: 140px; */
-  /* padding-bottom: 20px; */
-  /* position: relative; */
-  /* top: 5rem; */
+  padding-bottom: 20px;
 }
 
 .spicys > p {
-  position: relative;
-  bottom: -8rem;
   color: #fff;
   font-size: 43px;
   width: 70%;
-  /* padding-bottom: 40px; */
+  padding-bottom: 20px;
 }
 
 .spicys > p > span {
@@ -847,15 +844,13 @@ body {
 
 .feels {
   color: #fff;
-  position: relative;
-  bottom: -9rem;
-  /* padding-bottom: 30px; */
+  padding-bottom: 20px;
 }
 
 .time {
   display: flex;
-  position: relative;
-  bottom: -10rem;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 
 .day > span {
@@ -876,21 +871,18 @@ body {
 
 .nowBtn {
   padding: 10px;
-  width: 30%;
+  width: 100px;
+  height: 7vh;
   border: none;
   border-radius: 8px;
   color: #f2f2f4;
-  /* margin-top: 30px; */
   background-color: #b41b0f;
   text-align: center;
-  position: relative;
-  bottom: -14rem;
 }
 
-.burg > img {
-  position: relative;
-  left: 24rem;
-  top: 12rem;
+.burg {
+  width: 9%;
+  align-self: end;
 }
 
 /* sec6 */
@@ -901,7 +893,6 @@ body {
 
 .meet {
   font-size: 32px;
-  /* padding-top: 80px; */
 }
 .dedicated > p {
   width: 43%;
@@ -913,7 +904,6 @@ body {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, auto);
-  /* padding-bottom: 90px; */
 }
 
 .mikeInfo {
@@ -934,7 +924,6 @@ body {
 .mikeName > span {
   font-size: 15px;
   font-weight: 700;
-  /* margin-block: 50px; */
 }
 
 .mikeName > p {
@@ -987,9 +976,8 @@ body {
 }
 
 .container1 {
-  display: grid;
+  display: flex;
   gap: 31px;
-  grid-template-columns: repeat(5, 13.8rem);
 }
 
 .jonson:first-of-type {
@@ -1001,13 +989,12 @@ body {
 }
 
 .jonson {
-  /* height: 45vh; */
   padding: 10px;
   width: 100%;
   border-radius: 10px;
   background-color: #fff;
   border: 0.1px solid;
-  /* margin: 1rem; */
+  height: auto;
 }
 
 .jonson > h5 {
@@ -1016,8 +1003,7 @@ body {
 }
 
 .jonson > p {
-  justify-content: center;
-  display: flex;
+  justify-self: center;
 }
 
 .jspan {
@@ -1027,27 +1013,22 @@ body {
 }
 
 .jonson > img {
-  /* justify-content: center; */
   display: flex;
-  height: 20%;
   width: 25%;
   border-radius: 100%;
   border: 2px solid;
-  /* margin-left: 5rem; */
-  /* margin-bottom: 15px; */
   margin-block: 20px;
   object-fit: cover;
   border: none;
   justify-self: center;
-  /* justify-tems: center; */
 }
 
 .explore {
   font-size: 13px;
-  width: 105%;
   padding-block: 10px;
   text-align: center;
   line-height: 1.2;
+  justify-self: center;
 }
 
 .arrow {
@@ -1064,6 +1045,10 @@ body {
 .letWrapper {
   background-color: #f5f5f5;
   padding: 4rem;
+}
+
+.letLayout{
+  margin: 4rem;
 }
 .lettes {
   font-size: 32px;
@@ -1087,14 +1072,15 @@ body {
 }
 
 .letContainer {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, auto);
-  padding: 20px;
+  display: flex;
+  gap: 20px;
+  height: auto;
 }
 
 .letInfo {
   border: none;
+  width: 100%;
+  height: auto;
   padding: 15px;
   border-radius: 10px;
   background-color: #fff;
@@ -1105,15 +1091,9 @@ body {
   border-radius: 13px;
   padding-bottom: 10px;
   object-fit: cover;
-  height: 39vh;
   width: 100%;
-  /* height: 100%; */
-  /* height: fit-content; */
 }
 
-.let {
-  position: relative;
-}
 
 .letName > span {
   font-size: 15px;
@@ -1129,17 +1109,13 @@ body {
 }
 
 .let1 > p {
-  /* width: 93%; */
   font-size: 14px;
   color: #717171;
-  /* padding-bottom: 20px; */
 }
 
 .letBtn > button {
   padding: 7px;
   border: none;
-  /* width: 30%; */
-  /* object-fit: cover; */
   border-radius: 5px;
   background-color: #fff;
 }
@@ -1153,13 +1129,10 @@ body {
 .cafeuBanner {
   display: flex;
   padding: 1.5rem;
-  gap: 1rem;
+  gap: 6rem;
   /* justify-content: space-between; */
 }
 
-.cafeee {
-  /* gap: 7rem; */
-}
 
 .cafeuLogo {
   display: flex;
@@ -1173,8 +1146,8 @@ body {
   display: flex;
 }
 
-.welcome {
-  width: 80%;
+.welcome  {
+  /* width: 100%; */
   display: flex;
   align-items: start;
   font-size: 15px;
@@ -1189,8 +1162,7 @@ body {
 
 .alll {
   display: flex;
-  gap: 5rem;
-  /* padding-left: 3rem; */
+  gap: 4rem;
 }
 
 .com {
@@ -1220,7 +1192,6 @@ body {
 .social {
   line-height: 25px;
   font-size: 13px;
-  /* margin-right: 50px; */
 }
 
 .social > span {
@@ -1238,12 +1209,13 @@ body > .social > span {
 
 .subscribe {
   line-height: 25px;
+  /* margin-left: 5rem; */
 }
 
 .dont {
-  /* width: 70%; */
   padding-block: 10px;
   opacity: 0.7;
+  width: 85%;
 }
 
 .cafeEma {
@@ -1253,7 +1225,7 @@ body > .social > span {
 
 .cafeEma > .email {
   height: 40px;
-  width: 100%;
+  width: 75%;
   border-radius: 5px;
   display: flex;
   justify-content: start;
@@ -1273,44 +1245,79 @@ body > .social > span {
 @media (min-width: 260px) and (max-width: 460px) {
   .hamburger {
     display: block; /*code to show hamburger*/
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     font-size: 1.6rem;
-    color: #178255;
+    color: red;
     font-weight: 800;
+    /* position: fixed; */
   }
-  .firstNav {
-    display: none;
-    position: absolute;
-    width: 85%;
-    padding: 1.4rem 1rem;
-    top: 3.5rem;
-    right: 3px;
-    z-index: 1;
-    background-color: #0a0701;
-    opacity: 0.8;
-    border-bottom: 4px solid #fff;
-    transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  .vas {
+   display: none;
+   position: absolute;
+   width: 85%;
+   padding: 1.4rem 1rem;
+   top: 3.5rem;
+   right: 3px;
+   z-index: 1;
+   background-color: #0a0701;
+   opacity: 0.8;
+   border-bottom: 4px solid #fff;
+   transform: translate(100%, 0);
+   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  .lobster {
-    padding-right: 255px;
-  }
-  .firstNav {
+
+  .firstNav{
     flex-direction: column;
+    align-items: start;
   }
-  .navIcons {
+
+  
+  .firstNav a{
+   color: #fff;
+   font-size: 20px;
+   padding-bottom: 5px;
+   border-bottom: 2px solid #fff;
+    
+  }
+
+  .navIcon{
     padding: 0;
     border-left: none;
     width: 100%;
     margin-top: 15px;
+    justify-content: space-between;
+    display: flex;
   }
-  #toggle:checked + .firstNav {
+
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body{
+    scroll-behavior: smooth;
+  }
+
+  #toggle:checked + .vas {
     display: block;
     transform: none;
+  }
+
+  .cafeuNav{
+    padding: 10px;
+    justify-content: none;
   }
   .cafeuWriting {
     flex-direction: column;
     margin-bottom: 80px;
+    /* flex-direction: column-reverse; */
+  }
+
+  .cafeuContent{
+    width: 100%;
   }
   .imgContent {
     width: 400px;
@@ -1319,7 +1326,7 @@ body > .social > span {
     width: 50%;
   }
   .best {
-    width: 65%;
+    width: 35%;
   }
   .best > h4 {
     width: 170px;
@@ -1330,11 +1337,28 @@ body > .social > span {
   }
   .cafeuWord {
     display: flex;
-    width: 400px;
+    max-width: 900px;
     font-size: 35px;
+    width: 100%;
+    /* padding: 10px; */
   }
   .cafeuBtn {
     width: 450px;
+  }
+
+  .cafeuBtn > input{
+    width: 23%;
+    margin: 5px;
+  }
+
+  .imgContent {
+    margin-top: 6px;
+    margin: 10px;
+  }
+
+  .cafeImage{
+    position: relative;
+    top: 4rem;
   }
   .cafeImage > img {
     width: 380px;
@@ -1345,6 +1369,7 @@ body > .social > span {
   .cafeSmall > img:nth-of-type(1) {
     left: 16rem;
     top: -25rem;
+    position: absolute;
   }
   .cafeSmall > img:nth-of-type(2) {
     left: 2rem;
@@ -1362,10 +1387,17 @@ body > .social > span {
   }
 
   /* sec2 */
+
+  .stayBox{
+    position: relative;
+    top: -6rem;
+    width: 80%;
+    justify-self: center;
+  }
   .stayI {
-    top: 160vh;
-    width: 75%;
-    left: 3.2rem;
+    /* top: 160vh; */
+    /* width: 75%; */
+    /* left: 3.2rem; */
   }
   .stayI > h2 {
     font-size: 15px;
@@ -1373,28 +1405,41 @@ body > .social > span {
   .stayInfo > p {
     font-size: 12px;
   }
+
+  .stayBtn input{
+    width: 40%;
+  }
   .staySmallImage > .imgI {
-    top: 205vh;
+    top: -14vh;
   }
   .staySmallImage > .imgIi {
-    top: 190vh;
-    left: 15vh;
+    top: -15vh;
+    left: 20vh;
   }
   .staySmallImage > .imgIii {
-    left: 41vh;
-    top: 210vh;
+    /* right: 7vh; */
+    /* top: -10vh; */
   }
 
   /* sec3 */
   .chefLayout {
     display: grid;
   }
-  .chefImage {
+  .chefImage1 {
     padding: 2.5rem;
-    grid-template-columns: repeat(2, 10rem);
+    grid-template-columns: repeat(2, 160px);
   }
   .aboutWrapper {
     padding: 10px;
+    width: 100%;
+  }
+
+  .buffetWord p{
+    width: 70%;
+  }
+
+  .onlineWord p {
+    width: 70%;
   }
   .why {
     font-size: 25px;
@@ -1410,9 +1455,20 @@ body > .social > span {
   }
   .specialBtn {
     display: grid;
-    gap: 10px;
+    gap: 5px;
+    /* padding: 0%; */
     grid-template-columns: repeat(2, 12rem);
   }
+
+  .specially {
+    width: 80%;
+  }
+
+  .special{
+    width: 80%;
+  }
+
+  
   .foodLayout {
     flex-direction: column;
     display: flex;
@@ -1432,11 +1488,17 @@ body > .social > span {
   .comingSoon {
     padding-top: 10px;
   }
+
+  .spicys p {
+    width: 90%;
+  }
   .nowBt {
     padding-bottom: 13rem;
   }
   .burg {
-    position: absolute;
+    align-self: end;
+    justify-self: end;
+    width: 30%;
   }
   .burg > img {
     position: relative;
@@ -1476,31 +1538,51 @@ body > .social > span {
   .dedicated1 > p {
     width: 100%;
   }
+
+  .arroww{
+    display: none;
+  }
   .letContainer {
     display: grid;
-    grid-template-columns: repeat(1, 22rem);
     justify-content: center;
   }
+
+  .letLayout{
+    margin: 0;
+  }
+
 
   /* sec9 */
   .cafeuBanner {
     display: grid;
+    padding: 15px;
+    gap: 2rem;
   }
   .alll {
     display: grid;
     padding-left: 0;
-    gap: 2rem;
-    padding-bottom: 20px;
-    grid-template-columns: repeat(3, 7rem);
+    grid-template-columns: repeat(3,5rem);
+  }
+
+  .welcome{
+    padding-bottom: 10px;
+    width: 88%;
   }
   .copy {
     width: 35%;
-    padding-bottom: 20px;
   }
   .resources {
-    width: 70%;
+    width: 100%;
   }
   .subscribe {
     width: 100%;
+  }
+
+  .dont{
+    width: 95%;
+  }
+
+  .cafeEma > .email{
+    width: 80%;
   }
 }
