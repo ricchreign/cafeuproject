@@ -1000,6 +1000,7 @@ body {
 .jonson > h5 {
   justify-content: center;
   display: flex;
+  align-items: center;
 }
 
 .jonson > p {
@@ -1393,6 +1394,7 @@ body > .social > span {
     top: -6rem;
     width: 80%;
     justify-self: center;
+    display: flex;
   }
   .stayI {
     /* top: 160vh; */
@@ -1404,6 +1406,7 @@ body > .social > span {
   }
   .stayInfo > p {
     font-size: 12px;
+    text-align: center;
   }
 
   .stayBtn input{
@@ -1532,6 +1535,14 @@ body > .social > span {
     grid-template-columns: repeat(1, 15rem);
     justify-content: center;
     display: grid;
+  }
+  .jonson img{
+    justify-content: center;
+    display: flex;
+  }
+  .jonson p{
+    justify-content: center;
+    display: flex;
   }
 
   /* sec8 */
