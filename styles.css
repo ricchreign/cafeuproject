@@ -28,7 +28,7 @@ body {
   justify-content: space-between;
 }
 
-.vas{
+.vas {
   display: flex;
   gap: 6rem;
   justify-content: space-between;
@@ -254,10 +254,10 @@ body {
 }
 
 .cafeImage > img {
-  width: 100%;
+  /*width: 100%;
   /* object-fit: cover; */
-  max-width: 530px;
-  height: 530px;
+  max-width: 100%;
+  height: auto;
   background-color: transparent;
   border-radius: 100%;
   border: 2px dashed #fff;
@@ -417,9 +417,10 @@ body {
   margin-block: 30px;
   width: 50%;
   object-fit: cover;
+  margin-bottom: 15px;
 }
 
-.chefImage1  {
+.chefImage1 {
   display: grid;
   gap: 7px;
   grid-template-columns: repeat(2, auto);
@@ -436,19 +437,19 @@ body {
   border-top-right-radius: 50px;
 }
 
-.chefImage1 img:nth-of-type(1)  {
+.chefImage1 img:nth-of-type(1) {
   border-bottom-right-radius: 0px;
 }
 
-.chefImage1 img:nth-of-type(2)  {
+.chefImage1 img:nth-of-type(2) {
   border-bottom-left-radius: 0px;
 }
 
-.chefImage1 img:nth-of-type(3)  {
+.chefImage1 img:nth-of-type(3) {
   border-top-right-radius: 0px;
 }
 
-.chefImage1 img:nth-of-type(4)  {
+.chefImage1 img:nth-of-type(4) {
   border-top-left-radius: 0px;
 }
 
@@ -593,7 +594,7 @@ body {
 .specialWrapper {
   background-color: #fffcf1;
   padding-block: 50px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .special1 > h5 {
@@ -613,7 +614,7 @@ body {
   justify-content: center;
   font-weight: 700;
   padding: 15px;
-  font-size: 40px;
+  font-size: 25px;
   text-transform: capitalize;
 }
 
@@ -675,16 +676,16 @@ body {
 }
 
 .specially > img {
-
 }
 
 .foodLayout {
   display: grid;
+  justify-self: center;
   gap: 15px;
   grid-template-columns: repeat(3, auto);
 }
 
-.i{
+.i {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -735,7 +736,7 @@ body {
   border-top-left-radius: 10px;
   width: 100%;
   height: 40vh;
-  object-fit: cover ;
+  object-fit: cover;
 }
 
 .coleslaw1 {
@@ -769,7 +770,6 @@ body {
 }
 
 .coleslaw3 > span {
-  
 }
 
 .coleslawLogo {
@@ -818,12 +818,10 @@ body {
   width: 35%;
 }
 
-.just{
-
+.just {
 }
 
-.big{
- 
+.big {
 }
 
 .comingSoon {
@@ -1048,7 +1046,7 @@ body {
   padding: 4rem;
 }
 
-.letLayout{
+.letLayout {
   margin: 4rem;
 }
 .lettes {
@@ -1095,7 +1093,6 @@ body {
   width: 100%;
 }
 
-
 .letName > span {
   font-size: 15px;
   justify-content: start;
@@ -1134,7 +1131,6 @@ body {
   /* justify-content: space-between; */
 }
 
-
 .cafeuLogo {
   display: flex;
   padding-bottom: 10px;
@@ -1147,7 +1143,7 @@ body {
   display: flex;
 }
 
-.welcome  {
+.welcome {
   /* width: 100%; */
   display: flex;
   align-items: start;
@@ -1252,36 +1248,38 @@ body > .social > span {
     font-weight: 800;
     /* position: fixed; */
   }
+
+  .genLayout {
+    max-width: 400px;
+  }
   .vas {
-   display: none;
-   position: absolute;
-   width: 85%;
-   padding: 1.4rem 1rem;
-   top: 3.5rem;
-   right: 3px;
-   z-index: 1;
-   background-color: #0a0701;
-   opacity: 0.8;
-   border-bottom: 4px solid #fff;
-   transform: translate(100%, 0);
-   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    display: none;
+    position: absolute;
+    width: 85%;
+    padding: 1.4rem 1rem;
+    top: 3.5rem;
+    right: 3px;
+    z-index: 1;
+    background-color: #0a0701;
+    opacity: 0.8;
+    border-bottom: 4px solid #fff;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
-  .firstNav{
+  .firstNav {
     flex-direction: column;
     align-items: start;
   }
 
-  
-  .firstNav a{
-   color: #fff;
-   font-size: 20px;
-   padding-bottom: 5px;
-   border-bottom: 2px solid #fff;
-    
+  .firstNav a {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
   }
 
-  .navIcon{
+  .navIcon {
     padding: 0;
     border-left: none;
     width: 100%;
@@ -1290,15 +1288,13 @@ body > .social > span {
     display: flex;
   }
 
-  
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-
-  body{
+  body {
     scroll-behavior: smooth;
   }
 
@@ -1307,7 +1303,7 @@ body > .social > span {
     transform: none;
   }
 
-  .cafeuNav{
+  .cafeuNav {
     padding: 10px;
     justify-content: none;
   }
@@ -1317,7 +1313,7 @@ body > .social > span {
     /* flex-direction: column-reverse; */
   }
 
-  .cafeuContent{
+  .cafeuContent {
     width: 100%;
   }
   .imgContent {
@@ -1347,7 +1343,7 @@ body > .social > span {
     width: 450px;
   }
 
-  .cafeuBtn > input{
+  .cafeuBtn > input {
     width: 23%;
     margin: 5px;
   }
@@ -1357,39 +1353,58 @@ body > .social > span {
     margin: 10px;
   }
 
-  .cafeImage{
-    position: relative;
-    top: 4rem;
+  .cafeImage {
+    /* position: relative; */
+  
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    justify-content: center;
+    margin: 15px auto 30px;
+    max-width: 380px;
+    width: 100%;
   }
   .cafeImage > img {
-    width: 380px;
+    /* width: 380px; */
+    /* max-width: 100%; */
     top: 1rem;
-    height: 50vh;
+    height: auto;
+    margin: 0 auto;
     border-radius: 100%;
+    /* display: flex; */
+    margin-bottom: 15px;
+    position: relative;
   }
-  .cafeSmall > img:nth-of-type(1) {
-    left: 16rem;
-    top: -25rem;
+  .cafeSmall{
     position: absolute;
   }
+  .cafeSmall > img:nth-of-type(1) {
+    left: 8rem;
+    top: 3rem;
+  }
+
   .cafeSmall > img:nth-of-type(2) {
-    left: 2rem;
-    top: -25rem;
+    left: -11rem; 
+    top: 3rem;
   }
   .cafeSmall > img:nth-of-type(3) {
-    left: 20rem;
-    top: -9rem;
+    left: 8rem;
+    top: 17rem; 
   }
   .cafeSmall > img:nth-of-type(4) {
     width: 80px;
+    left: -11rem;
+    top: 17rem; 
   }
   .cafeSmall > img:nth-of-type(5) {
     width: 80px;
+    left: -11rem;
+    top: 17rem;  
   }
 
   /* sec2 */
 
-  .stayBox{
+  .stayBox {
     position: relative;
     top: -6rem;
     width: 80%;
@@ -1409,7 +1424,7 @@ body > .social > span {
     text-align: center;
   }
 
-  .stayBtn input{
+  .stayBtn input {
     width: 40%;
   }
   .staySmallImage > .imgI {
@@ -1437,7 +1452,7 @@ body > .social > span {
     width: 100%;
   }
 
-  .buffetWord p{
+  .buffetWord p {
     width: 70%;
   }
 
@@ -1448,8 +1463,11 @@ body > .social > span {
     font-size: 25px;
   }
   .burgerSmall {
-    top: 39rem;
+    top: 41rem;
     padding: 5px;
+  }
+  .burgerSmall > img{
+    width: 9rem;
   }
 
   /* sec4 */
@@ -1467,16 +1485,19 @@ body > .social > span {
     width: 80%;
   }
 
-  .special{
+  .special {
     width: 80%;
   }
 
-  
   .foodLayout {
     flex-direction: column;
     display: flex;
     width: 22rem;
     gap: 15px;
+  }
+  .coleslaw {
+    /* display: flex; */
+    /* justify-content: center; */
   }
 
   /* sec5 */
@@ -1536,11 +1557,13 @@ body > .social > span {
     justify-content: center;
     display: grid;
   }
-  .jonson img{
+  .jonson img {
     justify-content: center;
     display: flex;
+    justify-self: center;
+    text-align: center;
   }
-  .jonson p{
+  .jonson p {
     justify-content: center;
     display: flex;
   }
@@ -1550,7 +1573,7 @@ body > .social > span {
     width: 100%;
   }
 
-  .arroww{
+  .arroww {
     display: none;
   }
   .letContainer {
@@ -1558,10 +1581,9 @@ body > .social > span {
     justify-content: center;
   }
 
-  .letLayout{
+  .letLayout {
     margin: 0;
   }
-
 
   /* sec9 */
   .cafeuBanner {
@@ -1572,10 +1594,10 @@ body > .social > span {
   .alll {
     display: grid;
     padding-left: 0;
-    grid-template-columns: repeat(3,5rem);
+    grid-template-columns: repeat(3, 5rem);
   }
 
-  .welcome{
+  .welcome {
     padding-bottom: 10px;
     width: 88%;
   }
@@ -1589,11 +1611,11 @@ body > .social > span {
     width: 100%;
   }
 
-  .dont{
+  .dont {
     width: 95%;
   }
 
-  .cafeEma > .email{
+  .cafeEma > .email {
     width: 80%;
   }
 }
